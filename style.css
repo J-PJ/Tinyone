@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.barra{
+    padding: 35px 0px;
+    font-weight: 700;
+    font-size: 30px;
+    background:#fcdb00;
+
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.barralogo{ 
+    float: left;
+}
+
+.barralogo img,
+.barralogo span{ 
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.barramenu{
+    float: right;
+    list-style-type: none;
+}
+
+.barramenu li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-top: -5px;
+
+}
+.barramenu a{
+    font-weight: 700;
+    color: #010101;
+    font-size:18px;
+}
+.barramenu a:hover{  
+    color: gray;
+}
+a{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.wrapper{
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+@media(max-width: 915px){
+    .wrapper{
+        padding: 0 15px;
+    }
+}
+.area1 .left{
+    float:left;
+    font-size: 12px;
+    display: block;
+    padding: 70px 0;
+    max-width: 50%;
+    
+}
+
+.area1 .left img{
+    display: inline-block;
+    margin: 30px 22px 0 auto;
+}
+.area1 .left span{
+    margin: 15px 0;
+    display: block;
+    max-width: 320px;
+}
+
+.area1 .title{ 
+    font-size: 28px;
+    color:#010101;
+    max-width: 300px;
+    display:block;
+    
+    
+}
+#subtitle{
+    font-size: 16px;
+    color:#313841; 
+    max-width: 315px ;
+}
+
+.area1 .right{
+    float: right;
+    max-width: 50%;
+}
+.area1 .right img{
+    border-radius: 10px;
+}
+@media (max-width: 750px){
+    .area1 .left, .area1 .right{
+        max-width: 100%;
+        text-align: left;
+    }
+    
+}
+
+.area1{
+    padding: 35px;
+    background: #fcdb00;
+    vertical-align: middle;
+    color:#555555;
+}
+
+.ballnav{
+    margin: 20px 0;
+    text-align: center;
+}
+.ballnav li{
+    display: inline-block;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ballnav li.active,
+.ballnav li:hover{
+    opacity: 1;
+
+}
+.area2{
+    padding:100px 0 130px 0;
+    vertical-align: middle;
+}
+.area2 .feadesc{
+    display: block;
+    max-width: 630px;
+    text-align: center;
+    margin: 0 auto;
+} 
+.area2 .feadesc span{
+    text-align: center;
+}
+.area2 .featitle{
+    font-size: 28px;
+    color:#010101;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.area2 .options{
+    display: inline-block;
+    margin: 90px 0;
+    max-width: 100%;
+}
+.area2 .fully{
+    width: 33.3%;
+    display: inline-block;
+    color:#898989;
+    float: left;
+}
+.area2 .fullytitle{
+    font-size: 18px;
+    color: #010101;
+    margin: 0 0 15px 0;
+}
+.fully img,
+.fully span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.area2 .fully img{
+    margin: 0 10px 10px 0;
+    max-width: 35px;
+    height: auto;
+}
+.area2 .img-fully{
+    float: left;
+    max-width: 20%;
+    padding: 0 10px 0 0;
+}
+.area2 .content-fully{
+    float: left;
+    max-width: 80%;
+}
+.area2 .options2{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.area3{
+    padding: 100px 0;
+    background: #010101;
+}
+.area3 .supdesc{
+    display: block;
+    max-width: 630px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+.area3 .suptitle{
+    font-size: 28px;
+    color:#fcdb00;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.area3 .suptext{
+    color:#898989;
+}
+.area3 .busca{
+    margin: 15px 0;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+}
+.area3 input{
+    margin: 0 15px 0 0;
+    width: 80%;
+    height: 80%;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.area3 input,
+.area3 button{
+    border-radius: 4px;
+    vertical-align: middle;
+
+}
+.area3 button{
+    background: #fcdb00;
+    color: #010101;
+    cursor: pointer;
+    width: 15%;
+    height: 80%;
+    text-transform: uppercase;
+    border: none;
+}
+.area3 button:hover{
+    background: #caaf00;
+    
+}
+.area3 .icon{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 0 0 0;
+}
+.area3 img{
+    margin: 0 30px 0 0;
+}
+.area3 .footer{
+    margin: 100px 0 0 0;
+    display: inline-block;
+    color:white;
+    background: red;
+}
+.area3 .first{
+    display: block;
+    width: 170px;
+}
+.area3 .second{
+    display: block;
+    width: 50px;
+}
