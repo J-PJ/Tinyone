@@ -12,13 +12,21 @@ function removeActive() {
     }
 }
 
+function addCLass(el, klass) {
+    el.classList.add(klass);
+}
+
 function eventsAction() {
     for (a = 0; a < bullets.length; a++) {
         bullets[a].addEventListener('click', function () {
             removeActive();
-            this.classList.add('active');
+            addCLass(this, 'active');
         })
     }
+}
+function changeTheme() {
+    document.documentElement.style.setProperty('--yellow', 'red');
+
 }
 
 

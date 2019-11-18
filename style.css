@@ -8,12 +8,15 @@ html{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
 }
+:root {
+    --yellow: #fcdb00;
+  }
 
 .barra{
     padding: 35px 0px;
     font-weight: 700;
     font-size: 30px;
-    background:#fcdb00;
+    background:var(--yellow);
 
 }
 .clearfix:after {
@@ -55,7 +58,11 @@ html{
 }
 a{
     text-decoration: none;
-    border-bottom: none;
+    color: inherit;
+    transition: all 300ms;
+}
+ul{
+    list-style-type: none;
 }
 
 .wrapper{
@@ -118,7 +125,7 @@ a{
 
 .area1{
     padding: 35px;
-    background: #fcdb00;
+    background: var(--yellow);
     vertical-align: middle;
     color:#555555;
 }
@@ -216,7 +223,7 @@ a{
 }
 .area3 .suptitle{
     font-size: 28px;
-    color:#fcdb00;
+    color:var(--yellow);
     max-width: 300px;
     display: block;
     margin: 0 auto;
@@ -245,22 +252,21 @@ a{
 
 }
 .area3 button{
-    background: #fcdb00;
+    background: var(--yellow);
     color: #010101;
     cursor: pointer;
     width: 15%;
     height: 80%;
     text-transform: uppercase;
     border: none;
+    opacity: 0.9;
 }
 .area3 button:hover{
-    background: #caaf00;
+    opacity: 1;
     
 }
 .area3 .icon{
-    width: 100%;
     text-align: center;
-    display: inline-block;
     margin: 50px 0 0 0;
 }
 .area3 img{
@@ -268,15 +274,60 @@ a{
 }
 .area3 .footer{
     margin: 100px 0 0 0;
-    display: inline-block;
     color:white;
-    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.area3 .first{
-    display: block;
-    width: 170px;
+.footer .first{
+    display: inline-block;
+    width: 190px;
 }
-.area3 .second{
-    display: block;
-    width: 50px;
+.social .social-item{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-color: var(--yellow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: all 300ms;
+}
+.social .social-item:hover{
+    opacity: 1;
+    transform: translateY(1px) scale(0.95);
+}
+
+
+.social .social-item.facebook{
+    background-image: url("img/facebook-icon.svg");
+}
+.social .social-item.twitter{
+    background-image: url("img/twitter-icon.svg");
+}
+.social .social-item.google{
+    background-image: url("img/google-icon.svg");
+}
+.social .social-item.pinterest{
+    background-image: url("img/pinterest-icon.svg");
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.social li:last-child{
+    margin-right: 0;
+}
+.toggle{
+    display: inline-block;
+    background: blue;
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top:20px;
+    left: 20px;
 }

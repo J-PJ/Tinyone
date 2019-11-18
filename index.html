@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-    <title>Testando</title>
+    <title>Tinyone</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -16,12 +16,13 @@
                 <img src="img/fingerprint.png" alt="logotipo digital" />
                 <span>tinyone</span>
             </div>
-            <ul class="barramenu">
-                <li id="bfeatures"><a href="#features">Features</a>
-                </li>
-                <li id="bsupport"><a href="#support">Support</a></li>
-                <li id="blog"><a href="#blog">Blog</a></li>
-            </ul>
+            <nav>
+                <ul class="barramenu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section class="area1 ">
@@ -29,7 +30,7 @@
             <div class="clearfix">
                 <div class="area1-item">
                     <div class="left">
-                        <span class="title">Inspire your inspiration</span>
+                        <h3 class="title">Inspire your inspiration</h3>
                         <span id="subtitle">Simple to use for your app, products showcase and your inspiration</span>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
                             tristique
@@ -56,7 +57,7 @@
     <section class="area2" id="features">
         <div class="wrapper">
             <div class="feadesc">
-                <span class="featitle">Tinyone features</span>
+                <h3 class="featitle">Tinyone features</h3>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique
                     bibendum. Donec rutrum sed sem quis venenatris.</span>
             </div>
@@ -129,7 +130,7 @@
     <section class="area3" id="support">
         <div class="wrapper">
             <div class="supdesc">
-                <span class="suptitle">Keep in touch with us</span>
+                <h3 class="suptitle">Keep in touch with us</h3>
                 <span class="suptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget
                     tellus tristique
                     bibendum. Donec rutrum sed sem quis venenatris.</span>
@@ -139,21 +140,43 @@
                 <button><strong>submit</strong></button>
             </div>
             <div class="icon">
-                <img src="img/facebookicon.png" />
-                <img src="img/twittericon.png" />
-                <img src="img/googleicon.png" />
-                <img src="img/pinteresticon.png" />
+                <ul class="social">
+                    <li><a href="" class="social-item facebook"></a></li>
+                    <li><a href="" class="social-item twitter"></a></li>
+                    <li><a href="" class="social-item google"></a></li>
+                    <li><a href="" class="social-item pinterest"></a></li>
+                </ul>
             </div>
             <footer class="footer">
-                <span class="first">HALOVIETNAM LTD66, Dang Van ngu, Dong Da Hanoi, Vietnam contact@halovietnam.com +844
-                    35149182</span>
-                <span clas="second">Examples Shop License</span>
-                <span class="third">Contact About Privacy Terms</span>
-                <span class="fourth">Download Support Documents</span>
-                <span class="fifth">Media Blog Forums</span>
+                <span class="first"><a href="https://goo.gl/maps/gd6VpXjsGJ15pisY7" target="_blank">HALOVIETNAM LTD66,
+                        Dang Van ngu, Dong Da Hanoi, Vietnam</a>
+                    <a href="mailto:contact@halovietnam.com">contact@halovietnam.com</a> <a href="tel:84435149182">+844
+                        35149182</a></span>
+                <ul class="second">
+                    <li><a href="Examples">Examples</a></li>
+                    <li><a href="Shop">Shop</a></li>
+                    <li><a href="License">License</a></li>
+                </ul>
+                <ul class="second">
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="Privacy">Privacy</a></li>
+                    <li><a href="Terms">Terms</a></li>
+                </ul>
+                <ul class="second">
+                    <li><a href="Download">Download</a></li>
+                    <li><a href="Support">Support</a></li>
+                    <li><a href="Documents">Documents</a></li>
+                </ul>
+                <ul class="second">
+                    <li><a href="Media">Media</a></li>
+                    <li><a href="Blog">Blog</a></li>
+                    <li><a href="Forums">Forums</a></li>
+                </ul>
             </footer>
         </div>
     </section>
+    <span class="toggle" onclick="changeTheme()"></span>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
