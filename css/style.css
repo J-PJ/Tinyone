@@ -7,16 +7,17 @@
 html{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
+    background: white;
 }
 :root {
-    --yellow: #fcdb00;
+    --default-color: #fcdb00;
   }
 
 .barra{
     padding: 35px 0px;
     font-weight: 700;
     font-size: 30px;
-    background:var(--yellow);
+    background:var(--default-color);
 
 }
 .clearfix:after {
@@ -125,7 +126,7 @@ ul{
 
 .area1{
     padding: 35px;
-    background: var(--yellow);
+    background: var(--default-color);
     vertical-align: middle;
     color:#555555;
 }
@@ -223,7 +224,7 @@ ul{
 }
 .area3 .suptitle{
     font-size: 28px;
-    color:var(--yellow);
+    color:var(--default-color);
     max-width: 300px;
     display: block;
     margin: 0 auto;
@@ -252,7 +253,7 @@ ul{
 
 }
 .area3 button{
-    background: var(--yellow);
+    background: var(--default-color);
     color: #010101;
     cursor: pointer;
     width: 15%;
@@ -287,7 +288,7 @@ ul{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background-color: var(--yellow);
+    background-color: var(--default-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 35px;
@@ -302,16 +303,16 @@ ul{
 
 
 .social .social-item.facebook{
-    background-image: url("img/facebook-icon.svg");
+    background-image: url("../img/facebook-icon.svg");
 }
 .social .social-item.twitter{
-    background-image: url("img/twitter-icon.svg");
+    background-image: url("../img/twitter-icon.svg");
 }
 .social .social-item.google{
-    background-image: url("img/google-icon.svg");
+    background-image: url("../img/google-icon.svg");
 }
 .social .social-item.pinterest{
-    background-image: url("img/pinterest-icon.svg");
+    background-image: url("../img/pinterest-icon.svg");
 }
 
 .social li {
@@ -320,14 +321,4 @@ ul{
 }
 .social li:last-child{
     margin-right: 0;
-}
-.toggle{
-    display: inline-block;
-    background: blue;
-    width: 40px;
-    height: 20px;
-    border-radius: 5px;
-    position: fixed;
-    top:20px;
-    left: 20px;
 }

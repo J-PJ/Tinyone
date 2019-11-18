@@ -29,12 +29,13 @@ function eventsAction() {
 function changeTheme(variable, color) {
     document.documentElement.style.setProperty(variable, color);
 }
+
 function validateTheme() {
     var value = getComputedStyle(document.documentElement).getPropertyValue('--default-color');
-    if (value == 'red') {
+    if (value == '#c3f9ff') {
         changeTheme('--default-color', '#fcdb00');
     } else {
-        changeTheme('--default-color', 'red');
+        changeTheme('--default-color', '#c3f9ff');
     }
 }
 
