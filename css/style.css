@@ -8,6 +8,7 @@ html{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     background: white;
+    scroll-behavior: smooth;
 }
 :root {
     --default-color: #fcdb00;
@@ -47,6 +48,7 @@ html{
     vertical-align: middle;
     margin-left: 50px;
     margin-top: -5px;
+    
 
 }
 .barramenu a{
@@ -55,7 +57,7 @@ html{
     font-size:18px;
 }
 .barramenu a:hover{  
-    color: gray;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -255,6 +257,7 @@ ul{
 .area3 button{
     background: var(--default-color);
     color: #010101;
+    font-weight: 700;
     cursor: pointer;
     width: 15%;
     height: 80%;
