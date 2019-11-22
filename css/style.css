@@ -1,4 +1,4 @@
-.clearfix:after, .area2 .options:after {
+.clearfix:after, .area3 .footer:after, .area2 .options:after {
   content: "";
   clear: both;
   display: table;
@@ -306,6 +306,11 @@ ul {
   padding: 100px 0;
   background: #010101;
 }
+@media (max-width: 425px) {
+  .area3 {
+    padding: 50px 0;
+  }
+}
 .area3 input {
   margin: 0 15px 0 0;
   width: 80%;
@@ -313,6 +318,11 @@ ul {
   border: none;
   box-sizing: border-box;
   padding: 0 15px;
+}
+@media (max-width: 420px) {
+  .area3 input {
+    width: 70%;
+  }
 }
 .area3 input,
 .area3 button {
@@ -329,6 +339,11 @@ ul {
   text-transform: uppercase;
   border: none;
   opacity: 0.9;
+}
+@media (max-width: 420px) {
+  .area3 button {
+    width: 20%;
+  }
 }
 .area3 button:hover {
   opacity: 1;
@@ -366,13 +381,38 @@ ul {
 .area3 .footer {
   margin: 100px 0 0 0;
   color: white;
+}
+@media (max-width: 425px) {
+  .area3 .footer {
+    margin: 50px 0 0 0;
+  }
+}
+.area3 .footer-first {
+  width: 300px;
+  display: inline-block;
+  float: left;
+}
+@media (max-width: 660px) {
+  .area3 .footer-first {
+    width: 250px;
+  }
+}
+@media (max-width: 590px) {
+  .area3 .footer-first {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+}
+.area3 .footer-first .address {
+  display: inline-block;
+  max-width: 190px;
+}
+.area3 .footer-second {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.area3 .footer .first {
-  display: inline-block;
-  width: 190px;
 }
 .area3 .social .social-item {
   width: 35px;
