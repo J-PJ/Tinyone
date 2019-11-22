@@ -166,9 +166,24 @@ ul {
 @media (max-width: 750px) {
   .area1 .left,
 .area1 .right {
+    text-align: center;
+  }
+  .area1 .left img,
+.area1 .right img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .area1 .left,
+.area1 .right {
     max-width: 100%;
-    text-align: left;
+    text-align: center;
     float: none;
+  }
+  .area1 .left span,
+.area1 .right span {
+    max-width: 100%;
+    text-align: center;
   }
 }
 .area1 .title {
@@ -176,6 +191,11 @@ ul {
   color: #010101;
   max-width: 300px;
   display: block;
+}
+@media (max-width: 700px) {
+  .area1 .title {
+    max-width: 100%;
+  }
 }
 @media (max-width: 425px) {
   .area1 .title {
