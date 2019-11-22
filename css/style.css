@@ -211,6 +211,11 @@ ul {
   margin: 20px 0;
   text-align: center;
 }
+@media (max-width: 425px) {
+  .area1 .ballnav {
+    padding: 0 0 25px 0;
+  }
+}
 .area1 .ballnav li {
   display: inline-block;
   list-style: none;
@@ -343,6 +348,7 @@ ul {
 @media (max-width: 420px) {
   .area3 button {
     width: 20%;
+    opacity: 1;
   }
 }
 .area3 button:hover {
@@ -425,6 +431,11 @@ ul {
   border-radius: 5px;
   opacity: 0.9;
   transition: all 300ms;
+}
+@media (max-width: 425px) {
+  .area3 .social .social-item {
+    opacity: 1;
+  }
 }
 .area3 .social .social-item:hover {
   opacity: 1;
