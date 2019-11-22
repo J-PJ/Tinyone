@@ -49,6 +49,14 @@ ul{
     font-weight: 700;
     font-size: 30px;
     background:var(--default-color);
+
+    @media(max-width: 430px){
+     font-size: 25px;
+    }
+
+    @media(max-width: 355px){
+        text-align: center;
+    }
     
     .barralogo{ 
         float: left;
@@ -57,6 +65,12 @@ ul{
         span{ 
             display: inline-block;
             vertical-align: middle;
+        }
+        img{
+            @media(max-width: 350px){
+                height: 35px;
+                width: 35px;
+            }
         }
     }
 
@@ -69,16 +83,31 @@ ul{
             vertical-align: middle;
             margin-left: 50px;
             margin-top: -5px;
+            @media(max-width: 500px){
+                margin-left: 25px;
+            }
+            @media(max-width: 430px){
+                margin-left: 15px;     
+               }
         }
 
         a{
             font-weight: 700;
             color: #010101;
             font-size:18px;
+            @media(max-width: 430px){
+                font-size: 15px;     
+               }
 
             &:hover{  
                 color: white;
             }
+        }
+    }
+    .barralogo,
+    .barramenu{
+        @media(max-width: 355px){
+            float: none;
         }
     }
 }
@@ -88,12 +117,17 @@ ul{
     background: var(--default-color);
     vertical-align: middle;
     color:#555555;
+    @media(max-width: 425px){
+        padding: 0;
+    }
 
     .left{
         float:left;
         font-size: 12px;
         padding: 70px 0;
-
+        @media(max-width:425px){
+            padding: 35px 0;
+        }
         img{
             display: inline-block;
             margin: 30px 22px 0 auto;
@@ -103,12 +137,20 @@ ul{
             display: block;
             max-width: 320px;
         }
+        .stores{
+            @media(max-width: 425px){
+                text-align: center;
+            }
+        }
     }
     .right{
         float: right;
 
         img{
             border-radius: 10px;
+            @media(max-width: 365px){
+                max-width: 100%;
+            }
         }
     }
     .left,
@@ -127,6 +169,9 @@ ul{
         color:#010101;
         max-width: 300px;
         display:block;
+        @media(max-width: 425px){
+            font-size: 24px;
+        }
     }
     .subtitle-one{
         font-size: 16px;
