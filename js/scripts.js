@@ -39,6 +39,13 @@ function validateTheme() {
     }
 }
 
+function hideBtn() {
+    document.getElementById("btn").style.visibility = "hidden";
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("btn").style.visibility = "visible";
+    }
+}
+
 
 // init events
 eventsAction();
