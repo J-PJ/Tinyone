@@ -1,5 +1,5 @@
 # Url da produção final do teste
-https://j-pj.github.io/tinyone
+https://joao-pedro98.github.io/tinyone/
 
 # Teste para vaga de desenvolvedor Front-End
 O teste consiste em desenvolver uma página estática e responsiva.
